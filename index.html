@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.content {
+  position: relative;
+  top: 80px;
+ margin: auto;
+  color: azure;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.671);
+  border-radius: 20px;
+  box-shadow: 5px 5px  30px rgb(255, 0, 0);
+  padding: 20px;
+ 
+ 
+}
+label
+{
+    font-family: cursive;
+    font-size: xx-large;
+    color: rgb(255, 0, 0);
+    text-shadow: 5px 5px 5px black;
+}
+.input
+{
+    border-radius: 20px;
+    border: 3px solid rgb(255, 0, 0);
+    width: 400px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: red;
+    box-shadow: 5px 5px 20px rgb(255, 0, 0);
+}
+.button
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    width: 200px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow:5px 5px 25px  rgb(255, 0, 0);
+    border: 3px solid rgb(255, 0, 0);
+
+}
+.button:hover
+{
+    background-color: rgba(255, 0, 0, 0.589);
+    color: rgb(0, 247, 255);
+}
+
+
+</style>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="videoplayback.mp4" type="video/mp4">
+      </video>
+      <form action="" class="content">
+        <br><br>
+        <label for=""><b>Name</b></label><br><br>
+        <input type="text" class="input" placeholder="name" required><br><br>
+        <label for=""><b>Email</b></label><br><br>
+        <input type="email" class="input" placeholder="email" required><br><br>
+        <label for="password"><b>Password</b></label><br><br>
+        <input type="password" class="input" placeholder="password" required><br><br><br>
+        
+        <button class="button" type="reset">Submit</button>
+   
+    </form>
+    
+</body>
+</html>
